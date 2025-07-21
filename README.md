@@ -29,7 +29,7 @@ touch .env
 
 # 4. Agrega tus credenciales de Supabase en .env
 VITE_SUPABASE_URL=https://xyzcompany.supabase.co
-VITE_SUPABASE_ANON_KEY=tu-clave-anonima
+VITE_SUPABASE_KEY=tu-clave-anonima
 
 # 5. Inicia el servidor de desarrollo
 yarn dev
