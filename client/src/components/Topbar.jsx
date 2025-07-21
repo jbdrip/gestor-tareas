@@ -1,10 +1,9 @@
 import { FaUserCircle, FaBars } from 'react-icons/fa'
 import { Menu, MenuItem, MenuItems, MenuButton } from '@headlessui/react'
-import logo from '../assets/drone-deliver-logo2.svg'
 import { FaSignOutAlt } from 'react-icons/fa'
 import { useUserData } from '../hooks/useAuth'
 
-export default function TopBar({ isCollapsed, toggle, isMobileOpen, toggleMobile }) {
+export default function TopBar({ toggleMobile }) {
 
   const { userName, userEmail, logout } = useUserData()
 
@@ -23,10 +22,9 @@ export default function TopBar({ isCollapsed, toggle, isMobileOpen, toggleMobile
         </button>
 
         <div className="flex items-center space-x-3">
-          <img src={logo} alt="Logo" className="h-10 w-10 rounded-lg" />
-          <div className="hidden sm:block">
+          <div className="hidden sm:block ml-2">
             <h1 className="font-semibold text-lg">Panel Administrativo</h1>
-            <p className="text-blue-100 text-xs">Sistema de Gestión de Entregas con Drones</p>
+            <p className="text-blue-100 text-xs">Sistema de Gestión de Tareas</p>
           </div>
         </div>
       </div>

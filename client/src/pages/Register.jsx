@@ -29,7 +29,6 @@ export default function Register() {
     try {
       clearErrors("root")
       const result = await registerUser(data)
-      console.log("Resultado", result)
       if (result.error === null) {
         navigate("/login")
         toast.success("Registro exitoso. Por favor, inicia sesión.")

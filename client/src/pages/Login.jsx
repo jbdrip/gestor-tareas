@@ -33,7 +33,7 @@ export default function Login() {
       }
 
       toast.success("Inicio de sesión exitoso")
-      navigate("/root/users")
+      navigate("/tasks")
     } catch (err) {
       console.error(err)
       toast.error("Error inesperado al iniciar sesión.")

@@ -1,13 +1,8 @@
 import { NavLink } from 'react-router-dom'
-import { FaBars, FaUsers, FaShoppingCart } from 'react-icons/fa'
-import { useUserData } from '../hooks/useAuth'
+import { FaBars } from 'react-icons/fa'
 import routes from '../components/auth/routes'
 
 export default function Sidebar({ isCollapsed, toggle, isMobileOpen, toggleMobile }) {
-
-  const { userRole } = useUserData()
-
-
   return (
     <>
       {/* Desktop Sidebar */}
@@ -32,9 +27,9 @@ export default function Sidebar({ isCollapsed, toggle, isMobileOpen, toggleMobil
               : 'opacity-100 transform translate-x-0'
           }`}>
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-              <span className="text-white font-bold text-sm">GP</span>
+              <span className="text-white font-bold text-sm">GT</span>
             </div>
-            <span className="font-semibold text-gray-800 whitespace-nowrap">Gestión-Pro</span>
+            <span className="font-semibold text-gray-800 whitespace-nowrap">Gestión-Tareas</span>
           </div>
         </div>
 
@@ -92,7 +87,7 @@ export default function Sidebar({ isCollapsed, toggle, isMobileOpen, toggleMobil
                 ? 'opacity-0 transform translate-x-4 h-0 py-0 overflow-hidden' 
                 : 'opacity-100 transform translate-x-0 h-auto py-4'
             }`}>
-              <p>© 2025 Gestión-Pro</p>
+              <p>© 2025 Gestión-Tareas</p>
               <p>Versión 1.0.0</p>
             </div>
             

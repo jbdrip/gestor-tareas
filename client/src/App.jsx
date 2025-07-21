@@ -7,8 +7,6 @@ import AuthGuard from './components/auth/AuthGuard'
 
 // Pages
 import Login from "./pages/Login"
-import ForgotPassword from "./pages/ForgotPassword"
-import ResetPassword from "./pages/ResetPassword"
 import Register from "./pages/Register"
 import Tasks from "./pages/Tasks"
 
@@ -19,8 +17,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/register" element={<Register />} />
         
         {/* Protected Routes */}
