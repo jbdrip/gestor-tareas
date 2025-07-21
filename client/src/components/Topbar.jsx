@@ -3,7 +3,7 @@ import { Menu, MenuItem, MenuItems, MenuButton } from '@headlessui/react'
 import { FaSignOutAlt } from 'react-icons/fa'
 import { useUserData } from '../hooks/useAuth'
 
-export default function TopBar({ toggleMobile }) {
+export default function Topbar({ toggleMobile }) {
 
   const { userName, userEmail, logout } = useUserData()
 

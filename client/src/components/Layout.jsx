@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { useState } from 'react'
-import Sidebar from './SideBar'
-import TopBar from './TopBar'
+import Sidebar from './Sidebar'
+import Topbar from './Topbar'
 
 export default function Layout({ children }) {
   // Desktop sidebar state (collapsed/expanded)
@@ -27,7 +27,7 @@ export default function Layout({ children }) {
 
       {/* Main content area - full width on mobile when sidebar is closed */}
       <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
-        <TopBar 
+        <Topbar 
           isCollapsed={isCollapsed} 
           toggle={toggleDesktop}
           isMobileOpen={isMobileOpen}
